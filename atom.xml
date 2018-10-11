@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-12T06:23:10.281Z</updated>
+  <updated>2018-10-11T13:24:27.700Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,20 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>1st post title</title>
-    <link href="http://yoursite.com/2018/09/12/doodle/"/>
-    <id>http://yoursite.com/2018/09/12/doodle/</id>
-    <published>2018-09-12T06:18:23.000Z</published>
-    <updated>2018-09-12T06:23:10.281Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="first-post"><a href="#first-post" class="headerlink" title="first post"></a>first post</h1><h2 id="content"><a href="#content" class="headerlink" title="content"></a>content</h2><p>this is my first post written in <a href="http://markdown.cn/" target="_blank" rel="noopener">markdown</a></p>]]></content>
+    <title>leetcode347</title>
+    <link href="http://yoursite.com/2018/10/11/leetcode347/"/>
+    <id>http://yoursite.com/2018/10/11/leetcode347/</id>
+    <published>2018-10-11T13:24:27.000Z</published>
+    <updated>2018-10-11T13:24:27.700Z</updated>
     
     <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;first-post&quot;&gt;&lt;a href=&quot;#first-post&quot; class=&quot;headerlink&quot; title=&quot;first post&quot;&gt;&lt;/a&gt;first post&lt;/h1&gt;&lt;h2 id=&quot;content&quot;&gt;&lt;a href=&quot;#content&quot; class
-      
     
     </summary>
     
@@ -38,16 +31,26 @@
   </entry>
   
   <entry>
-    <title>welcome little  broken teeth!</title>
-    <link href="http://yoursite.com/2018/09/11/welcome-little-broken-teeth/"/>
-    <id>http://yoursite.com/2018/09/11/welcome-little-broken-teeth/</id>
+    <title>近日计划</title>
+    <link href="http://yoursite.com/2018/09/11/recent-plans/"/>
+    <id>http://yoursite.com/2018/09/11/recent-plans/</id>
     <published>2018-09-11T09:56:50.000Z</published>
-    <updated>2018-09-11T09:56:50.923Z</updated>
+    <updated>2018-10-11T13:35:45.372Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近开始感觉重心终于放到学习上来了，虽然整个过程很漫长，且依然要克服很多惰性因素。第一篇博文就用来整理一下最近这俩月准备做的事情吧，也算做对自己的一种激励。</p><h5 id="更新算法学习进度"><a href="#更新算法学习进度" class="headerlink" title="更新算法学习进度"></a>更新算法学习进度</h5><p>这段时间一直在看算法书，很多地方自己也是一知半解，正好可以梳理一下思路。</p><h5 id="Leetcode整理"><a href="#Leetcode整理" class="headerlink" title="Leetcode整理"></a>Leetcode整理</h5><p>刷leetcode的时候印象比较深，<del>思路比较刁钻</del> 的题目也会更新在博客上，增强记忆。</p><h5 id="主题制作进度"><a href="#主题制作进度" class="headerlink" title="主题制作进度"></a>主题制作进度</h5><p>看别人都有自己制作的hexo主题我也心痒痒…..以后晚上抽空就搞搞主题什么的，顺便把遇到的问题啊什么的都整理一发。之前自己在网上搜了好久都没看到主题制作的完全攻略，我自己发一点我踩过的坑也许对别人也有点帮助吧hhhh。</p><p>白天都在学新东西，晚上一边陪我妈看电视剧一边整理博客也算是快意人生一种吧哈哈。给自己立个flag：至少两天一篇博客吧！</p><p>人生苦短，及时做些有意义的事情吧。</p><p>2018-10-11 21:00</p>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;p&gt;最近开始感觉重心终于放到学习上来了，虽然整个过程很漫长，且依然要克服很多惰性因素。第一篇博文就用来整理一下最近这俩月准备做的事情吧，也算做对自己的一种激励。&lt;/p&gt;
+&lt;h5 id=&quot;更新算法学习进度&quot;&gt;&lt;a href=&quot;#更新算法学习进度&quot; class=&quot;headerlin
+      
+    
     </summary>
     
+    
+      <category term="随想" scheme="http://yoursite.com/tags/%E9%9A%8F%E6%83%B3/"/>
     
   </entry>
   

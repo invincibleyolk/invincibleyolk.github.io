@@ -231,25 +231,24 @@ font-family: "Source Han Serif CN", "Source Han Serif SC", "Source Han Serif TC"
   /*
 font-family: "PT Serif", "Source Han Serif CN", "Source Han Serif SC", "Source Han Serif TC", "Source Han Sans SC",
  "Source Han Sans TC", "PingFang SC", "PingFang HK", "PingFang TC", "Source Sans Pro", sans-serif;
- 
-  font-family: "Source Sans Pro", "Roboto", "Helvetica", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans TC", "PingFang SC", "PingFang HK", "PingFang TC", sans-serif;*/
- font-family: cursive;
-  color: #ffffff; }
+ */
+  font-family: "Source Sans Pro", "Roboto", "Helvetica", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans TC", "PingFang SC", "PingFang HK", "PingFang TC", sans-serif;
+  color: #2e405b; }
 
 html {
-  background: #2e405b; }
+  background: #ffffff; }
 
 .foreground {
-  background: #ffffff !important; }
-
-.background {
   background: #2e405b !important; }
 
+.background {
+  background: #ffffff !important; }
+
 .foreground-text * {
-  color: #ffffff !important; }
+  color: #2e405b !important; }
 
 .background-text * {
-  color: #2e405b !important; }
+  color: #ffffff !important; }
 
 h1 {
   font-size: 42px; }
@@ -272,7 +271,7 @@ h6 {
 body {
   font-size: 18px;
   line-height: 1.5em;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi/P//Py8DpQCXISBxJlING4QaGEdDiQgAEGAAg8sST3LGZYoAAAAASUVORK5CYII=");
+  background: url(source/line2.png);
   background-repeat: repeat;
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
@@ -286,20 +285,22 @@ body {
   position: relative; }
 
 .full-width-container {
-  width: 100vw; }
+  width: 100vw;}
 
 .main-container {
-  text-align: left;
-  margin: 0;
+  text-align: center;
+  margin: ;
   padding: 80px 40px;
   overflow: hidden;
-  float: left; }
+  float: left;
+  background-color: transparent; }
 
 .main-container :nth-child(1) {
   margin-top: 0; }
 
 .row {
-  margin: 0; }
+  margin: 0;
+  }
 
 .vertical-text {
   writing-mode: vertical-rl; }
@@ -343,17 +344,17 @@ body {
   text-align: left;
   font-size: 0.5em;
   padding: 0 0 50px 0;
-  border-left: solid #ffffff 2px;
+  border-left: solid #2e405b 2px;
   transition: padding 0.8s ease 0s, background 0.8s ease 0s; }
 
 .site-title:hover {
   padding: 15px 0 35px 0;
-  color: #2e405b !important;
-  background: #ffffff !important;
-  border-left: solid #ffffff 2px; }
+  color: #ffffff !important;
+  background: #2e405b !important;
+  border-left: solid #2e405b 2px; }
 
 .site-title:hover * {
-  color: #2e405b !important; }
+  color: #ffffff !important; }
 
 .site-title * {
   text-align: left;
@@ -361,9 +362,8 @@ body {
   margin-top: 0;
   margin-left: 10px;
   margin-right: 0;
-  /*font-family: "HiraMinProN-W6", "Source Han Serif CN", "Source Han Serif SC", "Source Han Serif TC", "Source Sans Pro", "Roboto", "Helvetica", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans TC", "PingFang SC", "PingFang HK", "PingFang TC", sans-serif;
-  font-family: "PT Serif", "Source Han Serif CN", "Source Han Serif SC", "Source Han Serif TC", "HiraMinProN-W6", "HiraMinProN-W3", serif;*/
-  font-family: cursive; }
+  font-family: "HiraMinProN-W6", "Source Han Serif CN", "Source Han Serif SC", "Source Han Serif TC", "Source Sans Pro", "Roboto", "Helvetica", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans TC", "PingFang SC", "PingFang HK", "PingFang TC", sans-serif;
+  /*font-family: "PT Serif", "Source Han Serif CN", "Source Han Serif SC", "Source Han Serif TC", "HiraMinProN-W6", "HiraMinProN-W3", serif;*/ }
 
 .site-title-large {
   font-size: 50px;
@@ -395,7 +395,7 @@ body {
   font-size: 18px; }
 
 .site-title-links a {
-  border-bottom: solid #ffffff 2px; }
+  border-bottom: solid #2e405b 2px; }
 
 .no-margin-left {
   margin-left: 0; }
@@ -410,25 +410,25 @@ body {
   margin-bottom: 0; }
 
 a {
-  color: #ffffff;
+  color: #2e405b;
   transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
   -moz-transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
   -webkit-transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
-  border-bottom: solid #ffffff 2px;
+  border-bottom: solid #2e405b 2px;
   padding: 0;
   cursor: pointer;
   cursor: hand; }
 
 a:hover {
-  color: #2e405b !important;
-  background-color: #ffffff;
+  color: #ffffff !important;
+  background-color: #2e405b;
   text-decoration: none;
   border-bottom: solid transparent 2px; }
 
 a:focus {
   text-decoration: none;
-  color: #b3b3b3; }
+  color: black; }
 
 .a-title {
   text-decoration: none;
@@ -442,23 +442,23 @@ a:focus {
   background-color: transparent; }
 
 .current {
-  border-bottom: solid #ffffff 3px !important; }
+  border-bottom: solid #2e405b 3px !important; }
 
 .a-mute {
   background-color: transparent;
-  color: #ffffff !important;
+  color: #2e405b !important;
   text-decoration: none;
   border-bottom: none; }
 
 .a-mute:hover {
   background-color: transparent;
-  color: #ffffff !important;
+  color: #2e405b !important;
   text-decoration: none;
   border-bottom: none; }
 
 .a-mute:focus {
   background-color: transparent;
-  color: #ffffff !important;
+  color: #2e405b !important;
   text-decoration: none;
   border-bottom: none; }
 
@@ -470,13 +470,13 @@ a:focus {
   border-bottom: solid transparent 2px; }
 
 .soc a:hover {
-  color: #e6e6e6 !important;
+  color: #3f587d !important;
   background-color: transparent !important;
   text-decoration: none;
   border-bottom: solid transparent 2px; }
 
 .soc a:focus {
-  color: #e6e6e6 !important; }
+  color: #3f587d !important; }
 
 .meta-item {
   margin: 0 10px 0 0; }
@@ -576,12 +576,12 @@ figure .code pre {
     margin-left: 0 !important;
     margin-right: 0 !important; }
   .site-title:hover {
-    color: #ffffff !important;
+    color: #2e405b !important;
     background: transparent !important;
     padding: 0;
     border: none; }
   .site-title:hover * {
-    color: #ffffff !important;
+    color: #2e405b !important;
     background: transparent !important; }
   .main-container {
     text-align: left;
@@ -680,12 +680,12 @@ figure .code pre {
     margin-left: 0 !important;
     margin-right: 0 !important; }
   .site-title:hover {
-    color: #ffffff !important;
+    color: #2e405b !important;
     background: transparent !important;
     padding: 0;
     border: none; }
   .site-title:hover * {
-    color: #ffffff !important;
+    color: #2e405b !important;
     background: transparent !important; }
   .main-container {
     text-align: left;
