@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-11T14:51:12.957Z</updated>
+  <updated>2018-10-11T15:06:31.742Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,25 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Leetcode 347.Top K Frequent Elements 前K个出现频率最多的元素（上）</title>
+    <title>前K个出现频率最多的元素（上）</title>
     <link href="http://yoursite.com/2018/10/11/leetcode347/"/>
     <id>http://yoursite.com/2018/10/11/leetcode347/</id>
     <published>2018-10-11T13:24:27.000Z</published>
-    <updated>2018-10-11T14:51:12.957Z</updated>
+    <updated>2018-10-11T15:06:31.742Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Leetcode-347-Top-K-Frequent-Elements-前K个出现频率最多的元素（上）"><a href="#Leetcode-347-Top-K-Frequent-Elements-前K个出现频率最多的元素（上）" class="headerlink" title="Leetcode 347.Top K Frequent Elements 前K个出现频率最多的元素（上）"></a>Leetcode 347.Top K Frequent Elements 前K个出现频率最多的元素（上）</h2><p>时间有限，本篇将介绍题目并加以分析，本题的具体实现和解题思路将写在下篇中。</p><h3 id="题目介绍"><a href="#题目介绍" class="headerlink" title="题目介绍"></a>题目介绍</h3><p>Given a non-empty array of integers, return the <strong><em>k</em></strong> most frequent elements.</p><p><strong>Example 1:</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums = [1,1,1,2,2,3], k = 2</span><br><span class="line">Output: [1,2]</span><br></pre></td></tr></table></figure><p><strong>Example 2:</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums = [1], k = 1</span><br><span class="line">Output: [1]</span><br></pre></td></tr></table></figure><p><strong>Note:</strong></p><ul><li>You may assume k is always valid, 1 ≤ k ≤ number of unique elements.</li><li>Your algorithm’s time complexity <strong>must be</strong> better than O(<em>n</em>log<em>n</em>), where <em>n</em> is the array’s size.</li></ul><p>&nbsp;&nbsp;&nbsp;&nbsp;如题目所示，这道题要求的是数组中出现频率为前K的元素。其中，K在此题中一定存在。且根据题目要求，算法的时间复杂度必须优于 O(nlogn)，其中n是数组的大小。</p><h3 id="题目分析"><a href="#题目分析" class="headerlink" title="题目分析"></a>题目分析</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;其实当时打题的时候没有注意到，但是这两天正好在看《算法设计与分析基础》，现在整理博文想到了时间复杂度这里的一点问题。<br>&nbsp;&nbsp;&nbsp;&nbsp;在书中的变治法一章，提到一种方法叫做<strong>预排序(presorting)</strong>。也就是在解决问题之前，先将输入排序再解决问题，以降低时间复杂度。介绍这种方法时，其中一个例子叫做<em>computing mode</em>，也就是计算一个数组中出现最多的元素（即<em>模式</em>）。先对数组进行预排序，可以将暴力破解法的n<sup>2</sup>的时间复杂度降低。<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>选择排序</strong>、<strong>冒泡排序</strong>和<strong>插入排序</strong>的最差情况下和平均情况下的时间复杂度都是 \Theta (n<sup>2</sup>)，<strong>快排</strong>的平均时间复杂度是 \Theta (nlogn)，但最差情况下也是平方级的。<strong>归并排序</strong>的时间复杂度在任何情况下都是 \Theta (nlogn)。但即使是这样也没法满足题目要求。因此，要用其他的方法来解这道题。<br>&nbsp;&nbsp;&nbsp;&nbsp;至于是用什么方法，这里先预告一下：哈希表和桶排序。等我明天来填坑……</p><p>2018-10-11 22:50</p>]]></content>
+    <content type="html"><![CDATA[<p>时间有限，本篇将介绍题目并加以分析，本题的具体实现和解题思路将写在下篇中。</p><h1 id="Leetcode-347-Top-K-Frequent-Elements"><a href="#Leetcode-347-Top-K-Frequent-Elements" class="headerlink" title="Leetcode 347.Top K Frequent Elements"></a>Leetcode 347.Top K Frequent Elements</h1><hr><h3 id="题目介绍"><a href="#题目介绍" class="headerlink" title="题目介绍"></a>题目介绍</h3><p>Given a non-empty array of integers, return the <strong><em>k</em></strong> most frequent elements.</p><p><strong>Example 1:</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums = [1,1,1,2,2,3], k = 2</span><br><span class="line">Output: [1,2]</span><br></pre></td></tr></table></figure><p><strong>Example 2:</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums = [1], k = 1</span><br><span class="line">Output: [1]</span><br></pre></td></tr></table></figure><p><strong>Note:</strong></p><ul><li>You may assume k is always valid, 1 ≤ k ≤ number of unique elements.</li><li>Your algorithm’s time complexity <strong>must be</strong> better than O(<em>n</em> log <em>n</em>), where <em>n</em> is the array’s size.</li></ul><h2 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-如题目所示，这道题要求的是数组中出现频率为前K的元素。其中，K在此题中一定存在。且根据题目要求，算法的时间复杂度必须优于-O-nlogn-，其中n是数组的大小。"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-如题目所示，这道题要求的是数组中出现频率为前K的元素。其中，K在此题中一定存在。且根据题目要求，算法的时间复杂度必须优于-O-nlogn-，其中n是数组的大小。" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如题目所示，这道题要求的是数组中出现频率为前K的元素。其中，K在此题中一定存在。且根据题目要求，算法的时间复杂度必须优于 O(nlogn)，其中n是数组的大小。"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如题目所示，这道题要求的是数组中出现频率为前K的元素。其中，K在此题中一定存在。且根据题目要求，算法的时间复杂度必须优于 O(nlogn)，其中n是数组的大小。</h2><h3 id="题目分析"><a href="#题目分析" class="headerlink" title="题目分析"></a>题目分析</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其实当时打题的时候没有注意到，但是这两天正好在看《算法设计与分析基础》，现在整理博文想到了时间复杂度这里的一点问题。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在书中的变治法一章，提到一种方法叫做<strong>预排序(presorting)</strong>。也就是在解决问题之前，先将输入排序再解决问题，以降低时间复杂度。介绍这种方法时，其中一个例子叫做<em>computing mode</em>，也就是计算一个数组中出现最多的元素（即<em>模式</em>）。先对数组进行预排序，可以将暴力破解法的n<sup>2</sup>的时间复杂度降低。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>选择排序</strong>、<strong>冒泡排序</strong>和<strong>插入排序</strong>的最差情况下和平均情况下的时间复杂度都是 &Theta;(n<sup>2</sup>)，<strong>快排</strong>的平均时间复杂度是 &Theta;(nlogn)，但最差情况下也是平方级的。<strong>归并排序</strong>的时间复杂度在任何情况下都是 &Theta;(nlogn)。但即使是这样也没法满足题目要求。因此，要用其他的方法来解这道题。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;至于是用什么方法，这里先预告一下：哈希表和桶排序。等我明天来填坑……</p><p>2018-10-11 22:50</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;Leetcode-347-Top-K-Frequent-Elements-前K个出现频率最多的元素（上）&quot;&gt;&lt;a href=&quot;#Leetcode-347-Top-K-Frequent-Elements-前K个出现频率最多的元素（上）&quot; class=&quot;headerl
+        &lt;p&gt;时间有限，本篇将介绍题目并加以分析，本题的具体实现和解题思路将写在下篇中。&lt;/p&gt;
+&lt;h1 id=&quot;Leetcode-347-Top-K-Frequent-Elements&quot;&gt;&lt;a href=&quot;#Leetcode-347-Top-K-Frequent-Elements&quot; c
       
     
     </summary>
     
     
-      <category term="Leetcode C++" scheme="http://yoursite.com/tags/Leetcode-C/"/>
+      <category term="Leetcode" scheme="http://yoursite.com/tags/Leetcode/"/>
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
   </entry>
   
